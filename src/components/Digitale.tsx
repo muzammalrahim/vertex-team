@@ -220,7 +220,7 @@ const Wrapper = styled.section`
   @media (max-width: 576px) {
     .mobile {
       /* background-position: -360px 50px; */
-      display: none;
+      display: contents;
     }
     .digitale-heading {
       h1 {
