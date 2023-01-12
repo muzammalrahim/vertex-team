@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { CgMenu, CgClose } from "react-icons/cg";
+import { CgClose } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import { useMenuContext } from "../context/menucontext";
 

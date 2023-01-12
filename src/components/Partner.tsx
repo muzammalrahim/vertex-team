@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Trusted from "./Trusted";
 import Vedi from "./Vedi";
