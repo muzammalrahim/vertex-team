@@ -198,6 +198,18 @@ const Wrapper = styled.section`
     }
   }
 
+  /* @media screen and (min-width: 390px) and (min-width: 390px){
+
+  } */
+
+  @media (min-width: 390px) {
+    .people {
+      .great-things-span {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+    }
+  }
   @media (max-width: 320px) {
     .people {
       .great-things-span {
