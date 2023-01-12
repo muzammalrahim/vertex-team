@@ -1,7 +1,4 @@
-import React from "react";
 import styled from "styled-components";
-import Partner from "./components/Partner";
-import Perche from "./components/Perche";
 import PercheNoi from "./components/PercheNoi";
 import Trusted from "./components/Trusted";
 import Vedi from "./components/Vedi";

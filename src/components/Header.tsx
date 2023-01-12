@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import { CgMenu } from "react-icons/cg";
 import Drawer from "rc-drawer";

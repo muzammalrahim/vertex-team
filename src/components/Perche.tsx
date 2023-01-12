@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import PercheNoi from "./PercheNoi";
 import Soprese from "./Soprese";

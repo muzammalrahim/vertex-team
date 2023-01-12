@@ -1,4 +1,3 @@
-import React from "react";
 import Department from "./components/Department";
 import Partner from "./components/Partner";
 

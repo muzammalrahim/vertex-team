@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-scroll";
