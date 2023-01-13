@@ -39,6 +39,7 @@ const Wrapper = styled.section`
     .perche-span {
       font-size: 4.4rem;
       line-height: normal;
+      font-family: "Poppins", sans-serif;
       padding: 1rem 1rem 1.5rem 2rem;
       border-radius: 7rem;
       color: #fff;
@@ -47,6 +48,7 @@ const Wrapper = styled.section`
     .noi-span {
       padding-left: 1rem;
       font-size: 4.4rem;
+      font-family: "Poppins", sans-serif;
       line-height: normal;
     }
   }

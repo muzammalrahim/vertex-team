@@ -99,6 +99,7 @@ const Wrapper = styled.section`
         text-align: center;
         .poche-parole-span {
           padding-left: 1rem;
+          font-family: "Poppins", sans-serif;
           font-size: 4.4rem;
           line-height: normal;
           color: #fff;
@@ -106,6 +107,7 @@ const Wrapper = styled.section`
         .zero-span {
           font-size: 4.4rem;
           line-height: normal;
+          font-family: "Poppins", sans-serif;
           padding: 1rem 2rem 1.5rem 2rem;
           border-radius: 7rem;
           color: #fff;

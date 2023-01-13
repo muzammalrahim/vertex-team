@@ -45,11 +45,13 @@ const Wrapper = styled.section`
     margin-top: 3rem;
     .people-span {
       padding-left: 0.5rem;
+      font-family: "Poppins", sans-serif;
       font-size: 4.4rem;
       line-height: normal;
     }
     .great-things-span {
       font-size: 4.4rem;
+      font-family: "Poppins", sans-serif;
       line-height: normal;
       margin-left: 1.5rem;
       padding: 1rem 2rem 1.5rem 2rem;
@@ -62,6 +64,7 @@ const Wrapper = styled.section`
     margin-top: 2rem;
     span {
       font-size: 4.4rem;
+      font-family: "Poppins", sans-serif;
       line-height: normal;
     }
   }
