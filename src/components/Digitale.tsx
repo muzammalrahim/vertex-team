@@ -6,7 +6,7 @@ const Digitale = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div className="digitale-heading">
+        <div className="digitale-heading web-div">
           <h1>Consulenza Digitale , </h1>
           <button>Per Tutti</button>
           <p>Un élite di esperti Software, Designer e Marketer.</p>
@@ -69,7 +69,7 @@ const Digitale = () => {
         </div> */}
       </div>
       <div className="mobile">
-        <div className="grid grid-three-columns">
+        <div className="grid grid-three-columns mob-hom-cols">
           <div className="penelope-skin">
             <div className="penelope-skin-inner">
               <img
@@ -98,7 +98,10 @@ const Digitale = () => {
               smooth={true}
               offset={50}
             >
-              <div className="outer-cosa">
+              <div className="hero-plus-icon mob-div">
+                <img src="plus.webp" alt="not found" />
+              </div>
+              <div className="outer-cosa web-div">
                 <h1>COSA FACCIAMO</h1>
                 <AiOutlineArrowDown className="arrow-icon" />
               </div>
@@ -135,11 +138,16 @@ const Wrapper = styled.section`
   .container {
     max-width: 120rem;
   }
+  .mob-hom-cols {
+    position: relative;
+  }
   .digitale-heading {
     margin-bottom: 3rem;
     text-align: center;
     h1 {
+      font-family: "Poppins", sans-serif;
       font-size: 7rem;
+      font-weight: 600;
     }
     button {
       border: none;
@@ -147,6 +155,8 @@ const Wrapper = styled.section`
       color: #fff;
       margin-top: 1rem;
       padding: 1rem 11rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
       font-size: 7rem;
       border-radius: 7rem;
     }
@@ -161,6 +171,7 @@ const Wrapper = styled.section`
     padding: 3rem;
     margin: 0 3rem;
     background: #fff;
+    box-shadow: 6.43px 7.66px 10px 0px rgba(167, 0, 250, 0.1);
     border-radius: 3rem;
     .penelope-skin-inner {
       display: flex;
@@ -172,8 +183,11 @@ const Wrapper = styled.section`
       .penelope-para {
         margin-top: 2rem;
         p {
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 800;
+        }
+        h1 {
+          font-size: 20px;
         }
       }
     }
@@ -217,7 +231,26 @@ const Wrapper = styled.section`
     }
   }
 
+  @media (max-width: 425px) {
+    .hero-plus-icon {
+      img {
+        width: 60px;
+      }
+    }
+    .hero-plus-icon {
+      position: absolute;
+      left: 5%;
+      bottom: 42%;
+    }
+  }
+
   @media (max-width: 576px) {
+    .penelope-skin {
+      padding: 2rem;
+    }
+    .grid {
+      gap: 1.5rem;
+    }
     .mobile {
       /* background-position: -360px 50px; */
       display: contents;

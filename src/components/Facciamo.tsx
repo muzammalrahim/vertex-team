@@ -58,6 +58,7 @@ const Wrapper = styled.section`
     text-align: center;
     .cosa-span {
       font-size: 4.4rem;
+      font-family: "Poppins", sans-serif;
       line-height: normal;
       padding: 1rem 1rem 1.5rem 2rem;
       border-radius: 7rem;
@@ -67,6 +68,7 @@ const Wrapper = styled.section`
     .facciamo-span {
       padding-left: 1rem;
       font-size: 4.4rem;
+      font-family: "Poppins", sans-serif;
       line-height: normal;
     }
   }

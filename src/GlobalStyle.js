@@ -1,12 +1,11 @@
 import { createGlobalStyle } from "styled-components";
-
 export const GlobalStyle = createGlobalStyle`
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -85,6 +84,17 @@ ${"" /* resuable code section  */}
     width: 45px;
     height: 40px;
     margin-top: 1rem;
+}
+.mob-div{
+  display: none;
+}
+@media (max-width: 425px) {
+  .web-div{
+    display: none;
+  }
+  .mob-div{
+    display: block;
+  }
 }
 
 `;

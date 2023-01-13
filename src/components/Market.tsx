@@ -106,6 +106,7 @@ const Wrapper = styled.section`
         margin-top: 3rem;
         margin-right: 30rem;
         h2 {
+          font-family: "Poppins", sans-serif;
           font-size: 4.4rem;
           line-height: 6.5rem;
         }

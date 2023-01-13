@@ -91,17 +91,15 @@ const Nav = () => {
     background: #fff;
     font-weight: 800;
     font-size: 1.9rem;
+    span {
+      font-family: "Suez One", serif;
+    }
 
     @media (max-width: 768px) {
       padding: 2rem 3rem 4rem 3rem;
       gap: 1rem;
       font-size: 1.7rem;
     }
-
-    /* span {
-      font-weight: 300;
-      font-size: 1.3rem;
-    } */
   `;
   return (
     <Nav>
