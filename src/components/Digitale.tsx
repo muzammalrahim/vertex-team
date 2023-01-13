@@ -226,6 +226,9 @@ const Wrapper = styled.section`
       h1 {
         font-size: 4rem;
       }
+      p {
+        font-size: 2rem;
+      }
       button {
         margin-top: 1rem;
         padding: 1rem 6rem;
