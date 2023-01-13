@@ -7,6 +7,18 @@ import { useMenuContext } from "../context/menucontext";
 const Nav = () => {
   const { matches, open, onTouchEnd, onSwitch } = useMenuContext();
   let navigate = useNavigate();
+  const handleAbout = () => {
+    navigate("/about");
+    onTouchEnd();
+  };
+  const handleHome = () => {
+    navigate("/");
+    onTouchEnd();
+  };
+  const handleQuote = () => {
+    navigate("/quote");
+    onTouchEnd();
+  };
   const Nav = styled.div`
     padding: 4rem 5rem;
     display: flex;
@@ -111,7 +123,7 @@ const Nav = () => {
             smooth={true}
             offset={50}
             className="home-link"
-            onClick={() => navigate("/")}
+            onClick={handleHome}
           >
             Home
           </Link>
@@ -127,7 +139,7 @@ const Nav = () => {
             Perche noi
           </Link>
         </MenuLink>
-        <MenuLink onClick={() => navigate("/about")}>I nostri servizi</MenuLink>
+        <MenuLink onClick={handleAbout}>I nostri servizi</MenuLink>
         <MenuLink href="">
           <Link
             activeClass="active"
@@ -139,7 +151,7 @@ const Nav = () => {
             Contattaci
           </Link>
         </MenuLink>
-        <MenuLink onClick={() => navigate("/quote")}>Preventivi</MenuLink>
+        <MenuLink onClick={handleQuote}>Preventivi</MenuLink>
       </Menu>
     </Nav>
   );
