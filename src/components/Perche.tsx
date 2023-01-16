@@ -129,8 +129,8 @@ const Wrapper = styled.section`
               flex-wrap: wrap;
               gap: 2rem;
               .tick-img {
-                border: 4px solid lightblue;
-                border-radius: 1.7rem;
+                border: 6px solid #eaf2ff;
+                border-radius: 3rem;
               }
               .richiedi-para {
                 margin-top: 2rem;

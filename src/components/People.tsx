@@ -3,31 +3,43 @@ import styled from "styled-components";
 const People = () => {
   return (
     <Wrapper>
-      <div className="section">
-        <div className="container">
-          <div className="aperete">
-            <h3>Abbiamo posizioni aperte!</h3>
+      <div className="section greate-people-sec">
+        <div className="">
+          <div className="cus-pad">
+            <div className="aperete">
+              <h3>Abbiamo posizioni aperte!</h3>
+            </div>
+            <div className="people">
+              <span className="people-span">Great People Make</span>
+              <span className="great-things-span"> Great Things.</span>
+            </div>
+            <div className="explore">
+              <span>Esplora le nostre posizioni aperte.</span>
+            </div>
+            {/* Web div Button */}
+            <div className="scopri-btn web-div">
+              <button>Scopri di più</button>
+            </div>
+            {/* Web div Button */}
           </div>
-          <div className="people">
-            <span className="people-span">Great People Make</span>
-            <span className="great-things-span"> Great Things.</span>
+          <div className="outer-people-image-section">
+            <div className="people-image-section">
+              <div className="people-inner">
+                <img src="people.webp" alt="not found" className="people-img" />
+              </div>
+            </div>
+            <div className="outer-hand">
+              <div className="inner-hand">
+                <img src="hand.webp" alt="notFound" />
+              </div>
+            </div>
           </div>
-          <div className="explore">
-            <span>Esplora le nostre posizioni aperte.</span>
-          </div>
-          <div className="scopri-btn">
+
+          {/* mobile div Button */}
+          <div className="scopri-btn mob-div">
             <button>Scopri di più</button>
           </div>
-          <div className="outer-hand">
-            <div className="inner-hand">
-              <img src="hand.webp" alt="notFound" />
-            </div>
-          </div>
-          <div className="people-image-section">
-            <div className="people-inner">
-              <img src="people.webp" alt="not found" className="people-img" />
-            </div>
-          </div>
+          {/* mobile div Button */}
         </div>
       </div>
     </Wrapper>
@@ -37,6 +49,12 @@ const People = () => {
 const Wrapper = styled.section`
   .section {
     padding: 12rem 0;
+  }
+  .greate-people-sec {
+    position: relative;
+    .cus-pad {
+      padding-left: 10rem;
+    }
   }
   .aperete {
     font-size: 2.2rem;
@@ -96,23 +114,48 @@ const Wrapper = styled.section`
   }
 
   .outer-hand {
-    position: relative;
     .inner-hand {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -37rem;
-
       img {
-        width: 120%;
-        height: 85rem;
+        position: absolute;
+        bottom: -163px;
+        right: -182px;
+        width: 114%;
+      }
+    }
+  }
+  .outer-people-image-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .people-image-section {
+      padding-left: 10rem;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .outer-hand {
+      .inner-hand {
+        img {
+          right: -210px;
+          width: 125%;
+        }
       }
     }
   }
 
   @media (max-width: 768px) {
-    .section {
+    /* .section {
       padding: 12rem 8rem;
+    } */
+    .greate-people-sec {
+      .cus-pad {
+        padding-left: 8rem;
+      }
+    }
+    .outer-people-image-section {
+      .people-image-section {
+        padding-left: 8rem;
+      }
     }
     .people {
       .great-things-span {
@@ -129,11 +172,11 @@ const Wrapper = styled.section`
     }
     .people-inner {
       .people-img {
-        width: 546px;
+        width: 500px;
         height: 280px;
       }
     }
-    .outer-hand {
+    /* .outer-hand {
       .inner-hand {
         top: -23rem;
         img {
@@ -141,12 +184,11 @@ const Wrapper = styled.section`
           height: 55rem;
         }
       }
-    }
+    } */
   }
-
   @media (max-width: 576px) {
     .section {
-      padding: 0 2rem 10rem 2rem;
+      padding: 0 2rem 4rem 2rem;
     }
     .aperete {
       font-size: 1.8rem;
@@ -179,10 +221,34 @@ const Wrapper = styled.section`
       }
     }
 
+    /* .outer-hand {
+      .inner-hand {
+        top: -14rem;
+        img {
+          width: 144%;
+          height: auto;
+        }
+      }
+    } */
+  }
+  @media (max-width: 425px) {
+    .greate-people-sec {
+      .cus-pad {
+        padding: 0 1rem;
+      }
+    }
+    .outer-people-image-section {
+      .people-image-section {
+        padding: 0 1rem;
+      }
+    }
+
     .outer-hand {
       .inner-hand {
         img {
-          width: 144%;
+          right: -200px;
+          width: 164%;
+          bottom: -99px;
         }
       }
     }
@@ -199,6 +265,12 @@ const Wrapper = styled.section`
         line-height: 1.2em;
       }
     }
+    .outer-hand {
+      .inner-hand img {
+        right: -160px;
+        bottom: -85px;
+      }
+    }
   }
 
   /* @media screen and (min-width: 390px) and (min-width: 390px){
@@ -212,6 +284,12 @@ const Wrapper = styled.section`
         padding: 10px 20px;
       }
     }
+    .outer-hand {
+      .inner-hand img {
+        right: -170px;
+        bottom: -85px;
+      }
+    }
   }
   @media (max-width: 320px) {
     .people {
@@ -222,6 +300,12 @@ const Wrapper = styled.section`
     .people-inner {
       .people-img {
         width: 225px;
+      }
+    }
+    .outer-hand {
+      .inner-hand img {
+        right: -145px;
+        bottom: -65px;
       }
     }
   }

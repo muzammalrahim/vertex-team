@@ -11,118 +11,64 @@ const Digitale = () => {
           <button>Per Tutti</button>
           <p>Un élite di esperti Software, Designer e Marketer.</p>
         </div>
-        {/* <div className="grid grid-three-columns">
-          <div className="penelope-skin">
-            <div className="penelope-skin-inner">
-              <img
-                src="penelope.webp"
-                alt="not found"
-                className="penelope-img"
-              />
-              <div className="penelope-para">
-                <div>
-                  <h1>Penelope Skin</h1>
-                </div>
-
-                <div>
-                  <p>
-                    <strong>E-Commerce</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="cosa">
-            <Link
-              activeClass="active"
-              to="perche"
-              spy={true}
-              smooth={true}
-              offset={50}
-            >
-              <div className="outer-cosa">
-                <h1>COSA FACCIAMO</h1>
-                <AiOutlineArrowDown className="arrow-icon" />
-              </div>
-            </Link>
-          </div>
-          <div className="penelope-skin">
-            <div className="penelope-skin-inner">
-              <img
-                src="bariberi.webp"
-                alt="not found"
-                className="penelope-img"
-              />
-              <div className="penelope-para">
-                <div>
-                  <h1>Barbieri b'jou</h1>
-                </div>
-
-                <div>
-                  <p>
-                    <strong>E-Commerce</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
       <div className="mobile">
-        <div className="grid grid-three-columns mob-hom-cols">
-          <div className="penelope-skin">
-            <div className="penelope-skin-inner">
-              <img
-                src="penelope.webp"
-                alt="not found"
-                className="penelope-img"
-              />
-              <div className="penelope-para">
-                <div>
-                  <h1>Penelope Skin</h1>
-                </div>
+        <div className="container">
+          <div className="grid grid-three-columns mob-hom-cols digital-cards">
+            <div className="penelope-skin">
+              <div className="penelope-skin-inner">
+                <img
+                  src="penelope.webp"
+                  alt="not found"
+                  className="penelope-img"
+                />
+                <div className="penelope-para">
+                  <div>
+                    <h1>Penelope Skin</h1>
+                  </div>
 
-                <div>
-                  <p>
-                    <strong>E-Commerce</strong>
-                  </p>
+                  <div>
+                    <p>
+                      <strong>E-Commerce</strong>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="cosa">
-            <Link
-              activeClass="active"
-              to="perche"
-              spy={true}
-              smooth={true}
-              offset={50}
-            >
-              <div className="hero-plus-icon mob-div">
-                <img src="plus.webp" alt="not found" />
-              </div>
-              <div className="outer-cosa web-div">
-                <h1>COSA FACCIAMO</h1>
-                <AiOutlineArrowDown className="arrow-icon" />
-              </div>
-            </Link>
-          </div>
-          <div className="penelope-skin">
-            <div className="penelope-skin-inner">
-              <img
-                src="bariberi.webp"
-                alt="not found"
-                className="penelope-img"
-              />
-              <div className="penelope-para">
-                <div>
-                  <h1>Barbieri b'jou</h1>
+            <div className="cosa">
+              <Link
+                activeClass="active"
+                to="perche"
+                spy={true}
+                smooth={true}
+                offset={50}
+              >
+                <div className="hero-plus-icon mob-div">
+                  <img src="plus.webp" alt="not found" />
                 </div>
+                <div className="outer-cosa web-div">
+                  <h1>COSA FACCIAMO</h1>
+                  <AiOutlineArrowDown className="arrow-icon" />
+                </div>
+              </Link>
+            </div>
+            <div className="penelope-skin">
+              <div className="penelope-skin-inner">
+                <img
+                  src="bariberi.webp"
+                  alt="not found"
+                  className="penelope-img"
+                />
+                <div className="penelope-para">
+                  <div>
+                    <h1>Barbieri b'jou</h1>
+                  </div>
 
-                <div>
-                  <p>
-                    <strong>E-Commerce</strong>
-                  </p>
+                  <div>
+                    <p>
+                      <strong>E-Commerce</strong>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -175,13 +121,13 @@ const Wrapper = styled.section`
     border-radius: 3rem;
     .penelope-skin-inner {
       display: flex;
+      align-items: center;
       gap: 2rem;
       .penelope-img {
-        border: 4px solid lightblue;
-        border-radius: 1.7rem;
+        border: 6px solid #eaf2ff;
+        border-radius: 3rem;
       }
       .penelope-para {
-        margin-top: 2rem;
         p {
           font-size: 12px;
           font-weight: 800;
@@ -211,23 +157,61 @@ const Wrapper = styled.section`
     }
   }
 
+  .digital-cards {
+    grid-template-columns: 0.64fr 1.5fr 0.64fr;
+  }
+
   .mobile {
     background: url("mobile.webp") no-repeat;
     background-size: cover;
     min-height: 157vh;
-    background-position: -50px -65px;
+    background-position: -121px -272px;
+    .container {
+      max-width: 163rem;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .mobile {
+      background-position: -50px -65px;
+      .container {
+        max-width: 125rem;
+      }
+    }
   }
 
   @media (max-width: 768px) {
     .grid {
-      gap: 7rem;
-    }
-    .grid-three-columns {
-      grid-template-columns: 1fr;
+      gap: 2rem;
     }
 
     .mobile {
       background-position: -60px 50px;
+    }
+
+    .penelope-skin {
+      padding: 2rem 1rem 2rem 1.5rem;
+      .penelope-skin-inner {
+        .penelope-img {
+          width: 35%;
+        }
+        .penelope-para {
+          h1 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .digital-cards {
+      display: flex;
+      margin: 0 auto;
+      position: relative;
+      width: calc(100% - var(--padding) * 2);
+    }
+    .cosa {
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -242,12 +226,23 @@ const Wrapper = styled.section`
       left: 5%;
       bottom: 42%;
     }
+    .digital-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .penelope-skin {
+      .penelope-skin-inner {
+        .penelope-img {
+          width: unset;
+        }
+      }
+    }
   }
 
   @media (max-width: 576px) {
-    .penelope-skin {
+    /* .penelope-skin {
       padding: 2rem;
-    }
+    } */
     .grid {
       gap: 1.5rem;
     }

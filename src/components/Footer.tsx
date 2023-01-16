@@ -107,6 +107,7 @@ const Wrapper = styled.section`
     width: 20%;
     .vertex-team-inner {
       display: flex;
+      align-items: center;
       gap: 1rem;
       padding: 2rem 3rem 4rem 2rem;
       h1 {
