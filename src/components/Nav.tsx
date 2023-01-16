@@ -83,6 +83,7 @@ const Nav = () => {
 
   const Logo = styled.a`
     padding: 2rem 3rem 4rem 2rem;
+    box-shadow: 6.43px 7.66px 10px 0px rgba(167, 0, 250, 0.1);
     display: flex;
     color: #000;
     gap: 1.7rem;
@@ -101,6 +102,7 @@ const Nav = () => {
       font-size: 1.7rem;
     }
   `;
+
   return (
     <Nav>
       {!matches && (
